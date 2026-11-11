@@ -1,0 +1,28 @@
+{
+    "algorithm": "Isolation Forest",
+    "features_used": [
+        "hour",
+        "day_of_week",
+        "is_weekend",
+        "energy_usage_kwh",
+        "temperature",
+        "humidity",
+        "occupancy"
+    ],
+    "contamination_rate": 0.04,
+    "n_estimators": 150,
+    "total_records": 30240,
+    "synthetic_anomalies_injected": 1058,
+    "detected_anomalies_by_model": 1210,
+    "precision": 0.443,
+    "recall": 0.5066,
+    "f1_score": 0.4727,
+    "accuracy": 0.9604,
+    "confusion_matrix": {
+        "true_negative": 28508,
+        "false_positive": 674,
+        "false_negative": 522,
+        "true_positive": 536
+    },
+    "evaluation_disclaimer": "Metrics reflect detection performance against synthetically injected anomaly patterns only. Unsupervised Isolation Forest isolates mathematical outliers in feature space and does not guarantee detection of all unmodeled real-world electrical faults."
+}
